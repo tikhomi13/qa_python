@@ -55,3 +55,50 @@ class BooksCollector:
     # получаем список Избранных книг
     def get_list_of_favorites_books(self):
         return self.favorites
+
+
+
+
+book = BooksCollector()
+book.add_new_book('Fav_book_1')
+
+#book.set_book_genre('Fav_book_1', 'Фантастика')
+
+book.add_book_in_favorites('Fav_book_1')
+
+print(book.get_list_of_favorites_books())
+
+print(book.favorites)
+
+print('Fav_book_1' in book.favorites)
+
+#print(book.get_books_genre())
+
+
+
+
+#print(len(book.get_books_genre()))
+#print(book.__dict__.values())
+
+
+
+
+
+   # print(True)
+
+
+#if 'Детективы' in book.books_genre.values():  # неправильный вариант - обращение напрямую к атрибуту
+#    print(True)
+#else:
+#    print(False)
+
+#print(book.get_books_genre())
+
+#print(list(book.books_genre.values()))
+
+
+#if 'Детективы' in book.get_books_genre().values():  # правильный вариант - обращение через метод, используя методы keys and values(тоже со скобками естественно)
+#    print(True)
+#else:
+#    print(False)
+
