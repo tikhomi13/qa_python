@@ -124,7 +124,7 @@ class TestBooksCollector:
         book.add_new_book('Fav_book_2')
         book.add_book_in_favorites('Fav_book_2')
 
-        book.get_list_of_favorites_books()
+        data = book.get_list_of_favorites_books()
 
-        assert len(book.get_list_of_favorites_books()) == 2
+        assert len(data) == 2
 
