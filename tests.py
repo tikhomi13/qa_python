@@ -103,9 +103,9 @@ class TestBooksCollector:
         book = BooksCollector()
         book.add_new_book('Любимая книга')
         book.add_book_in_favorites('Любимая книга')
-        book.get_list_of_favorites_books()
+        data = book.get_list_of_favorites_books()
 
-        assert 'Любимая книга' in book.get_list_of_favorites_books() and 'Любимая книга' in book.get_books_genre()
+        assert 'Любимая книга' in data and 'Любимая книга' in book.get_books_genre()
 
     def test_delete_book_from_favorites(self):
 
